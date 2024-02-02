@@ -54,25 +54,19 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 /* Login */
 .login{
-        /* vertical-align: middle;
-        border-style: none; */
         display: flex;
         justify-content: center;
 align-items: center;
 padding: 80px;
-        /* flex-direction: column; */
 }
 
 .login .row{
   margin-left: 100px;
 }
-/* img {
-    vertical-align: middle;
-    border-style: none;
-  } */
-
   .login .card-login{
     max-width: auto;
+    max-height: auto;
+    margin-right: 100px;
   }
   
   svg {
@@ -80,13 +74,8 @@ padding: 80px;
     vertical-align: middle;
   }
 
-/* .login .row{
-    padding-left: 35%;
-} */
-
 .login button{
-    margin-left: 35%;
-
+    margin-left: auto;
 }
 
 button,

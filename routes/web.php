@@ -10,5 +10,5 @@ Route::get('/about',[MainController::class,'about']);
 Route::get('/contact',[MainController::class,'contact']);
 
 Route::get('/', function () {
-    return view('welcomepage');
+    return view('welcome');
 });

@@ -46,15 +46,18 @@
     <br><br><br>
 </div> -->
 <div class="login">
-<!-- <div class="container"> -->
         <div class="row">
             <div class="col-md-6 text-center">
                 <img src="img/paragon-corp.png" alt="Gambar" style="max-width: 100%; height: auto;">
             </div>
         </div>
-
-        <div class="col-md-6">
-            <h2>Login</h2>
+        <div class="card-login">
+   <div class="card h-100">
+       <div class="card-body mx-4">
+        <h2 class="card-title text-center">Login</h2>
+        <h6 class="card-title text-center">Dashboard Sales Performace & Racing Doors SKU</h6>
+            <hr>
+            <br>
             <form action="{{url('/login-data')}}" method="POST">
                 @csrf
                 <div class="mb-3">
@@ -66,11 +69,15 @@
                     <input id="password" type="password" name="password" class="form-control" required>
                 </div>
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-primary btn-block btn-user" style="background-color: #2B50A8">Login</button>
                 </div>
             </form>
-        </div>
-    <!-- </div> -->
+            <h8 class="card-title text-center">Don't have an account? Register</h8>
+        </br>
+    </div>
+    </div>
+    </div>
+    </div>
 </div>
 </div>
 
