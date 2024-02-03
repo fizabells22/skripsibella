@@ -1,81 +1,114 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 * {
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-    display: block;
-  }
-  
 /* MASTER */
 .header {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header .brand {
-    font-size: 25px;
-    font-weight: bolder;
-    text-decoration: none;
-    margin-top: 13px;
-    color: #2B50A8;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-top: 13px;
+  color: #2B50A8;
 }
+
 .header .navbar a {
-    font-size: 20px;
-    color: #2B50A8;
-    margin: 10px;
+  font-size: 20px;
+  color: #2B50A8;
+  margin: 10px;
 }
 
 .header .navbar a:hover {
-    color: #2B50A8;
-    text-decoration: none;
+  color: #2B50A8;
+  text-decoration: none;
 }
 
-.header .icons a i{
-    font-size: 25px;
-    margin-left: 22px;
-    padding: 10px;
-    color: #666;
-    margin-top: 7px;
+.header .icons a i {
+  font-size: 25px;
+  margin-left: 22px;
+  padding: 10px;
+  color: #666;
+  margin-top: 7px;
 }
 
 .header .icons a i:hover {
-    color: #2B50A8;
+  color: #2B50A8;
 }
+
 .header .search-form {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* Login */
-.login{
-        display: flex;
-        justify-content: center;
-align-items: center;
-padding: 80px;
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
 }
 
-.login .row{
+.login .row {
   margin-left: 100px;
 }
-  .login .card-login{
-    max-width: auto;
-    max-height: auto;
-    margin-right: 100px;
-  }
-  
-  svg {
-    overflow: hidden;
-    vertical-align: middle;
-  }
 
-.login button{
-    margin-left: auto;
+.login .card-login {
+  max-width: auto;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.login button {
+  margin-left: 35%;
+
+}
+
+.login .card{
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* LOGIN */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* BODY KHUSUSON LOGIN */
+body .login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 button,
@@ -119,24 +152,24 @@ button::-moz-focus-inner,
 }
 
 button {
-    border-radius: 0;
-  }
-  
-  button:focus:not(:focus-visible) {
-    outline: 0;
-  }
+  border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
 
 footer.sticky-footer {
-    padding: 2rem 0;
-    flex-shrink: 0;
-    position: fixed;
-  }
-  
-  footer.sticky-footer .copyright {
-    line-height: 1;
-    font-size: 0.8rem;
-  }
-  
-  body.sidebar-toggled footer.sticky-footer {
-    width: 100%;
-  }
+  padding: 2rem 0;
+  flex-shrink: 0;
+  position: fixed;
+}
+
+footer.sticky-footer .copyright {
+  line-height: 1;
+  font-size: 0.8rem;
+}
+
+body.sidebar-toggled footer.sticky-footer {
+  width: 100%;
+}

@@ -11,83 +11,40 @@
     <title>Login Page | Dashboard Sales Performance & Racing Doors SKU</title>
 </head>
 <body>
-<!-- <div class="login">
-    <br><br><br>
-    <div class="image">
-        <img src="img/paragon-corp.png" alt="">
-    </div>
-    <div class="card-login">
-   
-        <div class="card">
-            <div class="card-body">
-            <h2 class="card-title text-center">Login</h2>
-            <hr>
-            <br>
-            <form action="{{url('/login-data')}}" method="POST">
-                @csrf
-                <div class="form-group">
-                <label for="idadmin">Username</label>
-                <input type="text" class="form-control @error('idadmin') is-invalid @enderror" id="idadmin" name="idadmin" value="{{old('iadadmin')}}">
-                @error('idadmin')
-                    <div class="text-danger">{{$message}}</div>
-                @enderror
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <label for="inputPassword2" class="sr-only">Password</label>
-                    <input type="password" class="form-control" id="inputPassword2">
-                </div>
-                 <button type="submit" class="btn btn-primary btn-block btn-user" style="background-color: #2B50A8">Login</button>
-            </form>
-            </div>
-        
-    </div>
-    </div>
-    <br><br><br>
-</div> -->
 <div class="login">
         <div class="row">
             <div class="col-md-6 text-center">
-                <img src="img/paragon-corp.png" alt="Gambar" style="max-width: 100%; height: auto;">
+                <img src="img/paragon-corp.png" alt="Gambar" style="width: 400px; height: auto; margin-right: 60px;">
             </div>
         </div>
-        <div class="card-login">
-   <div class="card h-100">
-       <div class="card-body mx-4">
-        <h2 class="card-title text-center">Login</h2>
-        <h6 class="card-title text-center">Dashboard Sales Performace & Racing Doors SKU</h6>
-            <hr>
-            <br>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                <div class="card-body">
+                <h2 class="card-title text-center">Login</h2>
             <form action="{{url('/login-data')}}" method="POST">
-                @csrf
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input id="email" type="email" name="email" class="form-control" required autofocus>
+                    <label for="username" class="form-label">Username</label>
+                    <input id="username" type="username" name="username" class="form-control" required autofocus>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
                     <input id="password" type="password" name="password" class="form-control" required>
                 </div>
                 <div class="mb-3">
-                <button type="submit" class="btn btn-primary btn-block btn-user" style="background-color: #2B50A8">Login</button>
+                    <button type="submit" class="btn btn-primary">Login</button>
                 </div>
             </form>
-            <h8 class="card-title text-center">Don't have an account? Register</h8>
-        </br>
-    </div>
-    </div>
+        </div>
     </div>
     </div>
 </div>
 </div>
 
 <footer class="py-4 text-white mt-4" style="background-color: #2B50A8" margin-top="auto">
-        <div class="container text-center">PT Paragon Technology and Innovation | Copyright &copy {{ date("Y") }}
+        <div class="container text-center">PT Paragon Technology and Innovation | Copyright &copy 
         </div>
     </footer>
-    <script src="{{mix ('js/my-app.js')}}"></script>
-    {{-- <script src="/js/jquery-3.6.1.slim.min.js"></script>
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script> --}}
 </body>
 </html>
