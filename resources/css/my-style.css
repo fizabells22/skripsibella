@@ -1,3 +1,175 @@
-body{
-    background-color: white;
+* {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* MASTER */
+.header {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header .brand {
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-top: 13px;
+  color: #2B50A8;
+}
+
+.header .navbar a {
+  font-size: 20px;
+  color: #2B50A8;
+  margin: 10px;
+}
+
+.header .navbar a:hover {
+  color: #2B50A8;
+  text-decoration: none;
+}
+
+.header .icons a i {
+  font-size: 25px;
+  margin-left: 22px;
+  padding: 10px;
+  color: #666;
+  margin-top: 7px;
+}
+
+.header .icons a i:hover {
+  color: #2B50A8;
+}
+
+.header .search-form {
+  margin-top: 10px;
+}
+
+/* Login */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+.login .row {
+  margin-left: 100px;
+}
+
+.login .card-login {
+  max-width: auto;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.login button {
+  margin-left: 35%;
+
+}
+
+.login .card{
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* LOGIN */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* BODY KHUSUSON LOGIN */
+body .login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+select {
+  word-wrap: normal;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+footer.sticky-footer {
+  padding: 2rem 0;
+  flex-shrink: 0;
+  position: fixed;
+}
+
+footer.sticky-footer .copyright {
+  line-height: 1;
+  font-size: 0.8rem;
+}
+
+body.sidebar-toggled footer.sticky-footer {
+  width: 100%;
 }
