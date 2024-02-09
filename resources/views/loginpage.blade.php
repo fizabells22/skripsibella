@@ -22,18 +22,48 @@
             <div class="card">
                 <div class="card-body">
                 <div class="card-body">
-                <h2 class="card-title text-center">Login</h2>
-            <form action="{{url('/login-data')}}" method="POST">
-                <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input id="username" type="username" name="username" class="form-control" required autofocus>
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input id="password" type="password" name="password" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">Login</button>
+                <h2 class="card-title text-center text-primary" >Login</h2>
+                <h6 class="card-title text-center">Dashboard Sales Performance & Racing Doors SKU</h6>
+                <br>
+                <form method="POST" action="{{ route('login') }}">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="email" class="form-label">{{ __('Email Address') }}</label>
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">{{ __('Password') }}</label>
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                    <label class="form-check-label" for="remember">
+                                        {{ __('Remember Me') }}
+                                    </label>
+                                </div>
+
+                        <div class="mb-3">
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    {{ __('Login') }}
+                                </button>
+                    <!-- <h6 class="card-title text-center">Don't have an account?</h6>
+                    @if (Route::has('password.request'))
+                                    <a class="btn btn-link" href="{{ route('password.request') }}"> Don't have an account?
+                                        {{ __('Register') }}
+                                    </a>
+                                @endif -->
                 </div>
             </form>
         </div>
