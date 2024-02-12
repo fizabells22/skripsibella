@@ -298,12 +298,27 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                    </div>
+
                     <!-- Content Row -->
                     <div class="row">
-                        <div class="d-flex">
-                    <div class="iframe" style="position:fixed;top:70px; left: 223px">
-                   <iframe width="1150" height="600" src="https://lookerstudio.google.com/embed/reporting/57350881-ebb4-43c0-9928-31c1e293e511/page/p_yfa5hfsf1c" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+
+            <!-- Footer -->
+            <footer class="sticky-footer text-white" style="background-color: #2B50A8" margin-top="auto">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>PT Paragon Technology and Innovation | Copyright &copy {{ date("Y") }}</span>
                     </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
         </div>
         <!-- End of Content Wrapper -->
 
@@ -339,5 +354,6 @@
     {{-- <script src="/js/jquery-3.6.1.slim.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script> --}}
+
 </body>
 </html>
