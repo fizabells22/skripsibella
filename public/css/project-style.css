@@ -1,22 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+
 * {
-    font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-
-article,
-aside,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section {
-  display: block;
-}
 
 /* MASTER */
 .header {
@@ -64,16 +53,14 @@ section {
   margin-top: 10px;
 }
 
-/* Login */
+/*------------*/
+
+/* LOGIN PAGE */
 .login {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 80px;
-}
-
-.login .row {
-  margin-left: 100px;
 }
 
 .login .card-login {
@@ -94,14 +81,12 @@ svg {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* LOGIN */
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
-/* BODY KHUSUSON LOGIN */
 body .login{
   display: flex;
   justify-content: center;
@@ -110,7 +95,9 @@ body .login{
   margin: 0;
 }
 
-button,
+/*------------*/
+
+/* button,
 input {
   overflow: visible;
 }
@@ -158,17 +145,6 @@ button:focus:not(:focus-visible) {
   outline: 0;
 }
 
-footer.sticky-footer {
-  padding: 2rem 0;
-  flex-shrink: 0;
-  position: fixed;
-}
-
-footer.sticky-footer .copyright {
-  line-height: 1;
-  font-size: 0.8rem;
-}
-
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
-}
+} */

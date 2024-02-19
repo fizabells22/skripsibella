@@ -10,17 +10,19 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+
+ *{
+  font-family: "Poppins", sans-serif;
+ }
+
+ .content-nav, .h1{
+  margin-top: 100;
+ }
+
  :root {
     --blue: #2B50A8;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #e74a3b;
-    --orange: #fd7e14;
-    --yellow: #f6c23e;
-    --green: #1cc88a;
-    --teal: #20c9a6;
-    --cyan: #36b9cc;
     --white: #fff;
     --gray: #858796;
     --gray-dark: #5a5c69;
@@ -37,42 +39,39 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family: sans-serif; 
   }
   
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
+  .responsive-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    }
+     
+    .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border: 0;
+    }
+
   html {
-    font-family: sans-serif;
+    font-family: "Poppins";
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   
-  article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-    display: block;
-  }
-  
   body {
     margin: 0;
-    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #858796;
     text-align: left;
-    background-color: #fff;
   }
-  
-  [tabindex="-1"]:focus:not(:focus-visible) {
-    outline: 0 !important;
-  }
-  
+
   hr {
     box-sizing: content-box;
     height: 0;
@@ -102,7 +101,7 @@
   
   address {
     margin-bottom: 1rem;
-    font-style: normal;
+    /* font-style: normal; */
     line-height: inherit;
   }
   
@@ -183,7 +182,7 @@
   code,
   kbd,
   samp {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: "Poppins";
     font-size: 1em;
   }
   
@@ -244,7 +243,7 @@
   optgroup,
   textarea {
     margin: 0;
-    font-family: inherit;
+    font-family: "Poppins";
     font-size: inherit;
     line-height: inherit;
   }
@@ -338,7 +337,7 @@
   }
   
   ::-webkit-file-upload-button {
-    font: inherit;
+    font: "Poppins";
     -webkit-appearance: button;
   }
   
@@ -4017,7 +4016,7 @@
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #6e707e;
-    background-color: #fff;
+    background-color: #858796;
     border-color: #dddfeb #dddfeb #fff;
   }
   
@@ -4401,7 +4400,7 @@
   }
   
   .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(255, 255, 255, 0.5); */
   }
   
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
@@ -4416,7 +4415,7 @@
   .navbar-dark .navbar-nav .active > .nav-link,
   .navbar-dark .navbar-nav .nav-link.show,
   .navbar-dark .navbar-nav .nav-link.active {
-    color: #858796;
+    /* color: #858796; */
   }
   
   .navbar-dark .navbar-toggler {
@@ -5603,7 +5602,7 @@
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -5716,8 +5715,7 @@
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-style: normal;
+    font-family: "Poppins";
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
@@ -9217,9 +9215,9 @@
     background-color: rgba(0, 0, 0, 0);
   }
   
-  .text-monospace {
+  /* .text-monospace {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
-  }
+  } */
   
   .text-justify {
     text-align: justify !important;
@@ -9545,7 +9543,7 @@
   }
   
   #wrapper #content-wrapper {
-    background-color: #f8f9fc;
+    background-color: #fff;
     width: 100%;
     overflow-x: hidden;
   }
@@ -9554,7 +9552,7 @@
     flex: 1 0 auto;
   }
   
-  .container,
+  /* .container,
   .container-fluid,
   .container-sm,
   .container-md,
@@ -9562,6 +9560,10 @@
   .container-xl {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  } */
+
+  .nav-item .dropdown .no-arrow::marker{
+    text-decoration: none;
   }
   
   .scroll-to-top {
@@ -9880,7 +9882,7 @@
     border: 0;
     font-weight: 900;
     content: '\f105';
-    font-family: 'Font Awesome 5 Free';
+    /* font-family: 'Font Awesome 5 Free'; */
   }
   
   .sidebar .nav-item.dropdown.show .dropdown-toggle::after,
@@ -10150,7 +10152,7 @@
   .sidebar #sidebarToggle::after {
     font-weight: 900;
     content: '\f104';
-    font-family: 'Font Awesome 5 Free';
+    /* font-family: 'Font Awesome 5 Free'; */
     margin-right: 0.1rem;
   }
   
@@ -10169,7 +10171,7 @@
   
   .sidebar.toggled #sidebarToggle::after {
     content: '\f105';
-    font-family: 'Font Awesome 5 Free';
+    /* font-family: 'Font Awesome 5 Free'; */
     margin-left: 0.25rem;
   }
   
@@ -10284,7 +10286,7 @@
       border: 0;
       font-weight: 900;
       content: '\f107';
-      font-family: 'Font Awesome 5 Free';
+      /* font-family: 'Font Awesome 5 Free'; */
     }
     .sidebar .nav-item .nav-link[data-toggle="collapse"].collapsed::after {
       content: '\f105';
@@ -10360,7 +10362,7 @@
   }
   
   .sidebar-dark hr.sidebar-divider {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
   }
   
   .sidebar-dark .sidebar-heading {
@@ -10368,11 +10370,11 @@
   }
   
   .sidebar-dark .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.8);
+    /* color: rgba(255, 255, 255, 0.8); */
   }
   
   .sidebar-dark .nav-item .nav-link i {
-    color: rgba(255, 255, 255, 0.3);
+    /* color: rgba(255, 255, 255, 0.3); */
   }
   
   .sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:hover {
@@ -10510,138 +10512,6 @@
     width: 12.5rem;
   }
   
-  @-webkit-keyframes noise-anim {
-    0% {
-      clip: rect(81px, 9999px, 74px, 0);
-    }
-    5% {
-      clip: rect(2px, 9999px, 29px, 0);
-    }
-    10% {
-      clip: rect(1px, 9999px, 15px, 0);
-    }
-    15% {
-      clip: rect(50px, 9999px, 8px, 0);
-    }
-    20% {
-      clip: rect(99px, 9999px, 79px, 0);
-    }
-    25% {
-      clip: rect(85px, 9999px, 15px, 0);
-    }
-    30% {
-      clip: rect(41px, 9999px, 53px, 0);
-    }
-    35% {
-      clip: rect(22px, 9999px, 36px, 0);
-    }
-    40% {
-      clip: rect(73px, 9999px, 79px, 0);
-    }
-    45% {
-      clip: rect(82px, 9999px, 100px, 0);
-    }
-    50% {
-      clip: rect(47px, 9999px, 96px, 0);
-    }
-    55% {
-      clip: rect(10px, 9999px, 44px, 0);
-    }
-    60% {
-      clip: rect(7px, 9999px, 24px, 0);
-    }
-    65% {
-      clip: rect(29px, 9999px, 88px, 0);
-    }
-    70% {
-      clip: rect(12px, 9999px, 44px, 0);
-    }
-    75% {
-      clip: rect(25px, 9999px, 57px, 0);
-    }
-    80% {
-      clip: rect(38px, 9999px, 35px, 0);
-    }
-    85% {
-      clip: rect(20px, 9999px, 96px, 0);
-    }
-    90% {
-      clip: rect(58px, 9999px, 44px, 0);
-    }
-    95% {
-      clip: rect(72px, 9999px, 41px, 0);
-    }
-    100% {
-      clip: rect(69px, 9999px, 72px, 0);
-    }
-  }
-  
-  @keyframes noise-anim {
-    0% {
-      clip: rect(81px, 9999px, 74px, 0);
-    }
-    5% {
-      clip: rect(2px, 9999px, 29px, 0);
-    }
-    10% {
-      clip: rect(1px, 9999px, 15px, 0);
-    }
-    15% {
-      clip: rect(50px, 9999px, 8px, 0);
-    }
-    20% {
-      clip: rect(99px, 9999px, 79px, 0);
-    }
-    25% {
-      clip: rect(85px, 9999px, 15px, 0);
-    }
-    30% {
-      clip: rect(41px, 9999px, 53px, 0);
-    }
-    35% {
-      clip: rect(22px, 9999px, 36px, 0);
-    }
-    40% {
-      clip: rect(73px, 9999px, 79px, 0);
-    }
-    45% {
-      clip: rect(82px, 9999px, 100px, 0);
-    }
-    50% {
-      clip: rect(47px, 9999px, 96px, 0);
-    }
-    55% {
-      clip: rect(10px, 9999px, 44px, 0);
-    }
-    60% {
-      clip: rect(7px, 9999px, 24px, 0);
-    }
-    65% {
-      clip: rect(29px, 9999px, 88px, 0);
-    }
-    70% {
-      clip: rect(12px, 9999px, 44px, 0);
-    }
-    75% {
-      clip: rect(25px, 9999px, 57px, 0);
-    }
-    80% {
-      clip: rect(38px, 9999px, 35px, 0);
-    }
-    85% {
-      clip: rect(20px, 9999px, 96px, 0);
-    }
-    90% {
-      clip: rect(58px, 9999px, 44px, 0);
-    }
-    95% {
-      clip: rect(72px, 9999px, 41px, 0);
-    }
-    100% {
-      clip: rect(69px, 9999px, 72px, 0);
-    }
-  }
-  
   .error:after {
     content: attr(data-text);
     position: absolute;
@@ -10655,138 +10525,6 @@
     animation: noise-anim 2s infinite linear alternate-reverse;
   }
   
-  @-webkit-keyframes noise-anim-2 {
-    0% {
-      clip: rect(82px, 9999px, 93px, 0);
-    }
-    5% {
-      clip: rect(13px, 9999px, 71px, 0);
-    }
-    10% {
-      clip: rect(22px, 9999px, 90px, 0);
-    }
-    15% {
-      clip: rect(17px, 9999px, 11px, 0);
-    }
-    20% {
-      clip: rect(21px, 9999px, 91px, 0);
-    }
-    25% {
-      clip: rect(37px, 9999px, 33px, 0);
-    }
-    30% {
-      clip: rect(37px, 9999px, 80px, 0);
-    }
-    35% {
-      clip: rect(6px, 9999px, 49px, 0);
-    }
-    40% {
-      clip: rect(86px, 9999px, 60px, 0);
-    }
-    45% {
-      clip: rect(46px, 9999px, 83px, 0);
-    }
-    50% {
-      clip: rect(16px, 9999px, 83px, 0);
-    }
-    55% {
-      clip: rect(73px, 9999px, 36px, 0);
-    }
-    60% {
-      clip: rect(58px, 9999px, 98px, 0);
-    }
-    65% {
-      clip: rect(20px, 9999px, 93px, 0);
-    }
-    70% {
-      clip: rect(43px, 9999px, 67px, 0);
-    }
-    75% {
-      clip: rect(66px, 9999px, 75px, 0);
-    }
-    80% {
-      clip: rect(66px, 9999px, 41px, 0);
-    }
-    85% {
-      clip: rect(17px, 9999px, 47px, 0);
-    }
-    90% {
-      clip: rect(49px, 9999px, 68px, 0);
-    }
-    95% {
-      clip: rect(8px, 9999px, 85px, 0);
-    }
-    100% {
-      clip: rect(83px, 9999px, 50px, 0);
-    }
-  }
-  
-  @keyframes noise-anim-2 {
-    0% {
-      clip: rect(82px, 9999px, 93px, 0);
-    }
-    5% {
-      clip: rect(13px, 9999px, 71px, 0);
-    }
-    10% {
-      clip: rect(22px, 9999px, 90px, 0);
-    }
-    15% {
-      clip: rect(17px, 9999px, 11px, 0);
-    }
-    20% {
-      clip: rect(21px, 9999px, 91px, 0);
-    }
-    25% {
-      clip: rect(37px, 9999px, 33px, 0);
-    }
-    30% {
-      clip: rect(37px, 9999px, 80px, 0);
-    }
-    35% {
-      clip: rect(6px, 9999px, 49px, 0);
-    }
-    40% {
-      clip: rect(86px, 9999px, 60px, 0);
-    }
-    45% {
-      clip: rect(46px, 9999px, 83px, 0);
-    }
-    50% {
-      clip: rect(16px, 9999px, 83px, 0);
-    }
-    55% {
-      clip: rect(73px, 9999px, 36px, 0);
-    }
-    60% {
-      clip: rect(58px, 9999px, 98px, 0);
-    }
-    65% {
-      clip: rect(20px, 9999px, 93px, 0);
-    }
-    70% {
-      clip: rect(43px, 9999px, 67px, 0);
-    }
-    75% {
-      clip: rect(66px, 9999px, 75px, 0);
-    }
-    80% {
-      clip: rect(66px, 9999px, 41px, 0);
-    }
-    85% {
-      clip: rect(17px, 9999px, 47px, 0);
-    }
-    90% {
-      clip: rect(49px, 9999px, 68px, 0);
-    }
-    95% {
-      clip: rect(8px, 9999px, 85px, 0);
-    }
-    100% {
-      clip: rect(83px, 9999px, 50px, 0);
-    }
-  }
-  
   .error:before {
     content: attr(data-text);
     position: absolute;
@@ -10798,18 +10536,4 @@
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim-2 3s infinite linear alternate-reverse;
-  }
-  
-  footer.sticky-footer {
-    padding: 2rem 0;
-    flex-shrink: 0;
-  }
-  
-  footer.sticky-footer .copyright {
-    line-height: 1;
-    font-size: 0.8rem;
-  }
-  
-  body.sidebar-toggled footer.sticky-footer {
-    width: 100%;
   }
