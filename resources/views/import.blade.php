@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/admin.css">
     <link rel="icon" href="img/paragon-corp.png">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <title>Report</title>
+    <title>Import File</title>
 </head>
 
 <body id="page-top">
@@ -52,8 +52,7 @@
                 <i class="fas fa-fw fa-chart-area"></i>
                     <span>Report</span></a>
             </li>
-
-            <!-- Divider -->
+             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
@@ -104,74 +103,21 @@
                 </nav>
                 <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-                    <!-- Content Row -->
-                    <div class="row">
-                    <div class="d-sm-flex align-items-center mb-4" >
-                        <a href="#" style="margin-right: 20px;" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                        class="fas fa-download fa-sm text-white-50"></i> Download Template</a>
-                        <a href="{{ route('import') }}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                        class="fas fa-download fa-sm text-white-50"></i> File Upload</a>
-                    </div>
-                    <!-- <title>Chart Example</title>
-    <canvas id="myChart" width="400" height="400"></canvas>
-    <script>
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var data = ;
-        var names = Object.keys(data);
-        var values = Object.values(data);
-
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: names,
-                datasets: [{
-                    label: 'Calories',
-                    data: values,
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    borderColor: 'rgba(255, 99, 132, 1)',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        }); -->
-
-        <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>File Upload Form</h1>
+    <form action="{{route ('import')}}" method="post" enctype="multipart/form-data">
+      @csrf
+      <div class="form-group">
+        <label for="fileInput">Choose File</label>
+        <input type="file" class="form-control-file" name="csvfile">
+      </div>
+      <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+  </div>
 
 
     <script src="{{mix ('js/my-app.js')}}"></script>

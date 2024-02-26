@@ -24,31 +24,30 @@
             </a>
 
               <!-- Heading -->
-              <br>
               <div class="sidebar-heading">
                 Dashboard
             </div>
 
-            <!-- Nav Item - Dashboard -->
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-chart-area"></i>
-                    <span>RACING DOORS SKU</span></a>
+             <!-- Nav Item - Dashboard -->
+             <li class="nav-item">
+                <a class="nav-link" a href="{{ route('dashboardsales') }}">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Racing Doors SKU</span></a>
             </li>
 
              <!-- Nav Item - Dashboard -->
-             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fa fa-shopping-cart"></i>
-                    <span>SALES PERFORMANCE</span></a>
+             <li class="nav-item">
+                <a class="nav-link" a href="{{ route('dashboardracing') }}">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Sales Performance</span></a>
             </li>
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                <i class="fas fa-fw fa-file-alt"></i>
-                    <span>REPORT</span></a>
+            <li class="nav-item active">
+                <a class="nav-link" a href="{{ route('report') }}">
+                <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Report</span></a>
             </li>
-
+            
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
         </ul>

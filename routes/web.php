@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ReportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,10 +37,20 @@ Route::get('/admin/auth/login', function () {
     return view('admin.auth.login');
 })->middleware(['auth:admin', 'verified'])->name('admin.dashboard');
 
-Route::get('/dashboardracing', function () {
-    return view('dashboard1');
+// Route::get('/dashboardracing', function () {
+//     return view('dashboard1');
+// });
+
+// Route::get('/dashboardsales', function () {
+//     return view('dashboard2');
+// });
+
+Route::get('/import', function () {
+    return view('import');
 });
 
-Route::get('/dashboardsales', function () {
-    return view('dashboard2');
-});
+Route::get('/dashboardracing', [PagesController::class, 'dashboardracing'])->name('dashboardracing');
+Route::get('/dashboardsales', [PagesController::class, 'dashboardsales'])->name('dashboardsales');
+Route::get('/report', [ReportController::class, 'report'])->name('report');
+
+Route::post('/import', [ReportController::class, 'import'])->name('import');
