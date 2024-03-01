@@ -30,19 +30,19 @@
 
              <!-- Nav Item - Dashboard -->
              <li class="nav-item">
-                <a class="nav-link" a href="{{ route('dashboardsales') }}">
+                <a class="nav-link" a href="{{ route('dashboardracing') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Racing Doors SKU</span></a>
             </li>
 
              <!-- Nav Item - Dashboard -->
              <li class="nav-item">
-                <a class="nav-link" a href="{{ route('dashboardracing') }}">
+                <a class="nav-link active" a href="{{ route('dashboardsales') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Sales Performance</span></a>
             </li>
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" a href="{{ route('report') }}">
                 <i class="fas fa-fw fa-chart-area"></i>
                     <span>Report</span></a>

@@ -54,3 +54,5 @@ Route::get('/dashboardsales', [PagesController::class, 'dashboardsales'])->name(
 Route::get('/report', [ReportController::class, 'report'])->name('report');
 
 Route::post('/import', [ReportController::class, 'import'])->name('import');
+Route::post('/importsales', [SalesReportController::class, 'importsales'])->name('importsales');
+Route::post('/importsales', [SalesAchReportController::class, 'importsalesach'])->name('importsalesach');

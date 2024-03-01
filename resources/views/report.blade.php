@@ -35,14 +35,14 @@
 
              <!-- Nav Item - Dashboard -->
              <li class="nav-item">
-                <a class="nav-link" a href="{{ route('dashboardsales') }}">
+                <a class="nav-link" a href="{{ route('dashboardracing') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Racing Doors SKU</span></a>
             </li>
 
              <!-- Nav Item - Dashboard -->
              <li class="nav-item">
-                <a class="nav-link" a href="{{ route('dashboardracing') }}">
+                <a class="nav-link" a href="{{ route('dashboardsales') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Sales Performance</span></a>
             </li>
@@ -114,6 +114,7 @@
                         <a href="{{ route('import') }}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                         class="fas fa-download fa-sm text-white-50"></i> File Upload</a>
                     </div>
+                                                           
                     <!-- <title>Chart Example</title>
     <canvas id="myChart" width="400" height="400"></canvas>
     <script>
@@ -178,6 +179,9 @@
     {{-- <script src="/js/jquery-3.6.1.slim.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script> --}}
-
+    <!-- plugin js -->
+    <script src="assets/vendor/dropzone/min/dropzone.min.js"></script>
+    <!-- init js -->
+    <script src="assets/js/ui/component.fileupload.js"></script>
 </body>
 </html>
