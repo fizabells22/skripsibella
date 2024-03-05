@@ -1,58 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/admin.css">
-    <link rel="icon" href="img/paragon-corp.png">
-    <title>Dashboard Sales Performance & Racing Doors SKU</title>
-</head>
+@extends('layout.master')
+@section('title','Dashboard Racing Doors SKU')
 
-<body id="page-top">
-
-    <!-- Page Wrapper -->
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-            <img src="img/paragon-corp.png" alt="Gambar" style="max-width: 100%; height: auto;">
-            </a>
-
-               <!-- Heading -->
-               <div class="sidebar-heading">
-                Dashboard
-            </div>
-
-             <!-- Nav Item - Dashboard -->
-             <li class="nav-item active">
-                <a class="nav-link" a href="{{ route('dashboardracing') }}">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Racing Doors SKU</span></a>
-            </li>
-
-             <!-- Nav Item - Dashboard -->
-             <li class="nav-item">
-                <a class="nav-link" a href="{{ route('dashboardsales') }}">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Sales Performance</span></a>
-            </li>
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" a href="{{ route('report') }}">
-                <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Report</span></a>
-            </li>
-            
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-        </ul>
-        <!-- End of Sidebar -->
-
+@section('content')
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -87,10 +36,4 @@
       </div>
       <br>
     <!-- End of Page Wrapper -->
-
-    <script src="{{mix ('js/my-app.js')}}"></script>
-    {{-- <script src="/js/jquery-3.6.1.slim.min.js"></script>
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script> --}}
-</body>
-</html>
+@endsection
