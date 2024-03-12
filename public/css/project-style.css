@@ -95,56 +95,42 @@ body .login{
   margin: 0;
 }
 
-/*------------*/
-
-/* button,
-input {
-  overflow: visible;
+/* LOGIN PAGE */
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
 }
 
-button,
-select {
-  text-transform: none;
+.register .card-login {
+  max-width: auto;
 }
 
-[role="button"] {
-  cursor: pointer;
+svg {
+  overflow: hidden;
+  vertical-align: middle;
 }
 
-select {
-  word-wrap: normal;
+.register button {
+  margin-left: 45%;
 }
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
+.register .card{
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-button:not(:disabled),
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled) {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
-}
-
-button {
-  border-radius: 0;
-}
-
-button:focus:not(:focus-visible) {
-  outline: 0;
-}
-
-body.sidebar-toggled footer.sticky-footer {
+footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-} */
+}
+
+body .register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}

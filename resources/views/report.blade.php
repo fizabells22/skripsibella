@@ -27,7 +27,7 @@
                         <a href="#" style="margin-right: 20px;" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                         class="fas fa-download fa-sm text-white-50"></i> Download Template</a>
                         <a href="{{ route('import') }}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                        class="fas fa-download fa-sm text-white-50"></i> File Upload</a>
+                        class="fas fa-upload fa-sm text-white-50"></i> File Upload</a>
                     </div>
                                                            
                     <!-- <title>Chart Example</title>

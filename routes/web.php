@@ -17,6 +17,14 @@ use App\Http\Controllers\ReportController;
 */
 
 Route::get('/', function () {
+    return view('profile');
+});
+
+Route::get('/registerpage', function () {
+    return view('registerpage');
+});
+
+Route::get('/login', function () {
     return view('loginpage');
 });
 
@@ -26,9 +34,12 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    // Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile.index');
+Route::patch('/profile/{id}', [ProfileController::class, 'update'])->name('profile.update');
 
 require __DIR__.'/auth.php';
 require __DIR__.'/adminauth.php';
@@ -36,14 +47,6 @@ require __DIR__.'/adminauth.php';
 Route::get('/admin/auth/login', function () {
     return view('admin.auth.login');
 })->middleware(['auth:admin', 'verified'])->name('admin.dashboard');
-
-// Route::get('/dashboardracing', function () {
-//     return view('dashboard1');
-// });
-
-// Route::get('/dashboardsales', function () {
-//     return view('dashboard2');
-// });
 
 Route::get('/import', function () {
     return view('import');
