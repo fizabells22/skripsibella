@@ -61,12 +61,12 @@
                     <span>Lighthouse</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" a href="{{ route('report') }}">
+                <a class="nav-link" a href="{{ route('salesscore') }}">
                 <i class="fa fa-file"></i>
                     <span>Sales Scoreboard</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" a href="{{ route('report') }}">
+                <a class="nav-link" a href="{{ route('salesach') }}">
                 <i class="fa fa-file"></i>
                     <span>Sales Achievement</span></a>
             </li>

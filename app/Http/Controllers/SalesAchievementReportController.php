@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class SalesAchievementReportController extends Controller
 {
-    public function report(Request $request){
-        return view('report');
+    public function salesach(Request $request){
+        return view('salesach');
     }
     public function importsalesach(Request $request)
     {
@@ -20,9 +20,9 @@ class SalesAchievementReportController extends Controller
         $filePath = $file->storeAs('csvfiles', $file->getClientOriginalName());
 
         $data = array_map('str_getcsv', file(storage_path('app/' . $filePath)));
-
+        
         foreach ($data as $row) {
-            Report::create([
+            SalesAchReport::create([
                 'dc' => $row[0],
                 'sales_name' => $row[1],
                 'sales_category' => $row[2],
@@ -67,6 +67,6 @@ class SalesAchievementReportController extends Controller
                 'tavi_%' => (double)$row[41],
             ]);
         }
-            return redirect()->route('report');
+            return redirect()->route('salesach');
     }   
 }

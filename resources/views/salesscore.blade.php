@@ -13,9 +13,7 @@
                 <h1 class="h3 mb-0 text-gray-800 mt-3 ml-4">Report</h1>
                 </div>
                 </div>
-
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
 
@@ -24,9 +22,9 @@
                     <!-- Content Row -->
                     <div class="row">
                     <div class="d-sm-flex align-items-center mb-4" >
-                        <a href="{{ route('download.template') }}" style="margin-right: 20px;" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                        <a href="{{ route('download.template3') }}" style="margin-right: 20px;" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                         class="fas fa-download fa-sm text-white-50"></i> Download Template</a>
-                        <a href="{{ route('import') }}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                        <a href="{{ route('importsales') }}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                         class="fas fa-upload fa-sm text-white-50"></i> File Upload</a>
                     </div>
                                                            

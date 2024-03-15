@@ -10,7 +10,7 @@
             <div class="overflow-auto" >
                 <div class="content-nav">
                 <div class="d-sm-flex align-items-center justify-content-between mb-3">
-                <h1 class="h3 mb-0 text-gray-800 mt-3 ml-4">Upload Report Lighthouse</h1>
+                <h1 class="h3 mb-0 text-gray-800 mt-3 ml-4">Upload Sales Achievement</h1>
                 </div>
                 </div>
                     </ul>
@@ -24,7 +24,7 @@
 <body>
   <div class="container">
     <h1>File Upload Form</h1>
-    <form action="{{route ('import')}}" method="POST" enctype="multipart/form-data">
+    <form action="{{route ('importsalesach')}}" method="post" enctype="multipart/form-data">
       @csrf
       <div class="form-group">
         <label for="fileInput">Choose File</label>

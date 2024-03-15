@@ -4,6 +4,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\SalesReportController;
+use App\Http\Controllers\SalesAchievementReportController;
+use App\Http\Controllers\DownloadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +20,7 @@ use App\Http\Controllers\ReportController;
 */
 
 Route::get('/', function () {
-    return view('profile');
+    return view('auth.register');
 });
 
 Route::get('/registerpage', function () {
@@ -48,14 +51,31 @@ Route::get('/admin/auth/login', function () {
     return view('admin.auth.login');
 })->middleware(['auth:admin', 'verified'])->name('admin.dashboard');
 
-Route::get('/import', function () {
-    return view('import');
+Route::get('/report', function () {
+    return view('report');
 });
+
+Route::get('/salesach', function () {
+    return view('salesach');
+});
+
+Route::get('/salesscore', function () {
+    return view('salesscore');
+});
+
 
 Route::get('/dashboardracing', [PagesController::class, 'dashboardracing'])->name('dashboardracing');
 Route::get('/dashboardsales', [PagesController::class, 'dashboardsales'])->name('dashboardsales');
+
 Route::get('/report', [ReportController::class, 'report'])->name('report');
+Route::post('/report', [ReportController::class, 'report'])->name('report');
+Route::get('/salesach', [SalesAchievementReportController::class, 'salesach'])->name('salesach');
+Route::get('/salesscore', [SalesReportController::class, 'salesscore'])->name('salesscore');
 
 Route::post('/import', [ReportController::class, 'import'])->name('import');
+Route::post('/importsalesach', [SalesAchievementReportController::class, 'importsalesach'])->name('importsalesach');
 Route::post('/importsales', [SalesReportController::class, 'importsales'])->name('importsales');
-Route::post('/importsales', [SalesAchReportController::class, 'importsalesach'])->name('importsalesach');
+
+Route::get('download/template', [DownloadController::class, 'downloadTemplate'])->name('download.template');
+Route::get('download/template2', [DownloadController::class, 'downloadTemplate2'])->name('download.template2');
+Route::get('download/template3', [DownloadController::class, 'downloadTemplate3'])->name('download.template3');

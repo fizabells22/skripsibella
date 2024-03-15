@@ -60,7 +60,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-right: 80px;
+  padding-top: 0%;
 }
 
 .login .card-login {
@@ -95,12 +98,15 @@ body .login{
   margin: 0;
 }
 
-/* LOGIN PAGE */
+/* REGISTER PAGE */
 .register {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-right: 80px;
+  padding-top: 0%;
 }
 
 .register .card-login {
