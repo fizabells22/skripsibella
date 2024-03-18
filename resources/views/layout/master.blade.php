@@ -10,6 +10,7 @@
     <link rel="icon" href="img/paragon-corp.png">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>@yield('title')</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 </head>
 
 <body id="page-top">

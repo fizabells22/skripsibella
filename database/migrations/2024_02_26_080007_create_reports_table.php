@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('brand');
             $table->string('product_status_lifecycle');
             $table->string('product');
-            $table->integer('delivered_nominal_bruto_incppn');
+            $table->double('delivered_nominal_bruto_incppn');
             $table->timestamps=false;		
         });
     }

@@ -2,7 +2,7 @@
 @section('title','Report | Dashboard Sales Performance & Racing Doors SKU')
 
 @section('content')
-<!-- Content Wrapper -->
+<!--Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
@@ -29,38 +29,41 @@
                         <a href="{{ route('import') }}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                         class="fas fa-upload fa-sm text-white-50"></i> File Upload</a>
                     </div>
-                                                           
-                    <!-- <title>Chart Example</title>
-    <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <div class="container">
+        <h2>Grafik Penjualan</h2>
+        <!-- Tempatkan canvas untuk chart -->
+        <canvas id="myChart" width="50" height="25"></canvas>
+    </div>
     <script>
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var data = ;
-        var names = Object.keys(data);
-        var values = Object.values(data);
+        // Data untuk chart (nama produk dan nominal)
+        var namaProduk = {!! json_encode($namaProduk) !!};
+        var nominal = {!! json_encode($nominal) !!};
 
+        // Inisialisasi chart
+        var ctx = document.getElementById('myChart').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: names,
+                labels: namaProduk,
                 datasets: [{
-                    label: 'Calories',
-                    data: values,
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    borderColor: 'rgba(255, 99, 132, 1)',
+                    label: 'Nominal',
+                    data: nominal,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
                     borderWidth: 1
                 }]
             },
             options: {
                 scales: {
-                    y: {
-                        beginAtZero: true
-                    }
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
                 }
             }
-        }); -->
+        });
 
-        <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
+</script>
 @endsection
