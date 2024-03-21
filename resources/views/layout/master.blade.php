@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/project-style.css">
     <link rel="icon" href="img/paragon-corp.png">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>@yield('title')</title>
