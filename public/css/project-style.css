@@ -140,22 +140,3 @@ body .register{
   height: 100vh;
   margin: 0;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-/* Style the form */
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-/* Center the form horizontally on smaller screens */
-@media (max-width: 576px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}

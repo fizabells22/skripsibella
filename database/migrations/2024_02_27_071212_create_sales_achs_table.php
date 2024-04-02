@@ -14,6 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('sales_achs', function (Blueprint $table) {
+            $table->id('achievement_id');
             $table->string('dc');
             $table->string('sales_name');
             $table->string('sales_category');
@@ -56,7 +57,7 @@ return new class extends Migration
             $table->double('target_tavi');
             $table->double('ach_tavi');
             $table->double('tavi_%');
-            $table->timestamps=false;	
+            $table->timestamps();
         });
     }
 

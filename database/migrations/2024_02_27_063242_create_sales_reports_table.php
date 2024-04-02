@@ -14,6 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('sales_reports', function (Blueprint $table) {
+            $table->id('scoreboard_id');
             $table->string('dc');
             $table->string('sales_name');
             $table->string('sales_category');
@@ -29,7 +30,7 @@ return new class extends Migration
             $table->double('target_ecall');
             $table->double('actual_ecall');
             $table->double('act/plan_ecall_%');
-            $table->timestamps=false;		
+            $table->timestamps();		
         });
     }
 

@@ -64,6 +64,10 @@ Route::get('/salesscore', function () {
     return view('salesscore');
 });
 
+Route::get('/chart', function () {
+    return view('chart');
+});
+
 
 Route::get('/dashboardracing', [PagesController::class, 'dashboardracing'])->name('dashboardracing');
 Route::get('/dashboardsales', [PagesController::class, 'dashboardsales'])->name('dashboardsales');
